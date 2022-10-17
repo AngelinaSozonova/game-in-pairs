@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script defer src="src/js/index.js"></script>
+
+  <link rel="stylesheet" href="src/css/normalize.css">
+  <link rel="stylesheet" href="src/css/style.css">
+
+  <title>Game in pairs</title>
+</head>
+<body>
+  <main class="main">
+    <div class="container main__container">
+      <h1 class="main__title">Game in pairs</h1>
+      <ul class="main__list list-reset flex"></ul>
+      <div class="main__timer">
+        <div class="main__timer-items flex"></div>
+      </div>
+    </div>
+  </main>
+
+  <div class="settings-game settings-game-open flex">
+    <h2 class="settings-game__title">Settings game</h2>
+    <form action="#" class="settings-game__form flex">
+      <label class="settings-game__caption" for="horizontal">Number of cards horizontally</label>
+        <input id="horizontal" type="number" class="settings-game__input input-reset">
+      <label class="settings-game__caption" for="horizontal">Number of cards vertically</label>
+        <input id="vertical" type="number" class="settings-game__input input-reset">
+      <button class="settings-game__btn btn-reset">Start</button>
+    </form>
+  </div>
+
+  <div class="game-over flex">
+    <h2 class="game-over__title"></h2>
+    <div class="game-over__btns flex">
+      <button class="game-over__btn btn-reset">Repeat</button>
+      <button class="game-over__btn-settings btn-reset">Settings</button>
+    </div>
+  </div>
+</body>
+</html>
